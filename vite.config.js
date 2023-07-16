@@ -4,5 +4,8 @@ import vue from '@vitejs/plugin-vue'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [vue()],
-  base:'/course-table/'
+  base:'/course-table/',
+  build: {
+    outDir: 'docs'
+  }
 })
